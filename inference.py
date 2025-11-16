@@ -61,9 +61,10 @@ if __name__ == "__main__":
         "There were two races; in the long run, Andy held a steady pace. Is Andy a sportsman or a career guy?",
     ]
     suffix = " Answer using one word only."
+    max_answer_length = 5
 
     tokenizer, model = load_model(model_name)
     for question in questions:
         print("\nYou:", question + suffix)
-        response = ask(model, tokenizer, question + suffix)
+        response = ask(model, tokenizer, question + suffix, max_answer_length)
         print("\nModel:", response, "\n")
