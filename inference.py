@@ -7,8 +7,8 @@ import sys
 def main():
     # ----- CHANGE THESE PARAMETERS -----
     model_name = "mistralai/Mistral-7B-Instruct-v0.3"
-    suffix = "Answer using one word only."
-    max_answer_tokens = 15
+    suffix = "Answer using one word only. Answer: "
+    max_answer_tokens = 5
     testing = False
     # -----------------------------------
 
