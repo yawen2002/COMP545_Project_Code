@@ -6,9 +6,9 @@ import sys
 
 def main():
     # ----- CHANGE THESE PARAMETERS -----
-    model_name = "qwen/Qwen3-4B-Instruct-2507"
+    model_name = "mistralai/Mistral-7B-Instruct-v0.3"
     suffix = "Answer using one word only."
-    max_answer_length = 15
+    max_answer_tokens = 15
     testing = False
     # -----------------------------------
 
@@ -19,20 +19,25 @@ def main():
         (context, question, correct_words, wrong_words) = df.iloc[0]
         prompt = " ".join([context, question, suffix])
         print(prompt)
-        print(ask(model, tokenizer, prompt, max_answer_length))
+        print(ask(model, tokenizer, prompt, max_answer_tokens))
         sys.exit()
 
     n = df.shape[0]
     ambiguous = []
     nb_correct = 0
-    for _, (context, question, correct_words, wrong_words) in tqdm(df.iterrows(), total=n):
+    output = pd.DataFrame(columns=["Correct", "Question", "Answer"])
+    for i, (context, question, correct_words, wrong_words) in tqdm(df.iterrows(), total=n):
         prompt = " ".join([context, question, suffix])
-        answer = ask(model, tokenizer, prompt, max_answer_length)
+        answer = ask(model, tokenizer, prompt, max_answer_tokens)
+        is_correct = False
         if contains(answer, correct_words) and contains(answer, wrong_words) or (not contains(answer, correct_words) and not contains(answer, wrong_words)):
             ambiguous.append((prompt, answer))
         elif contains(answer, correct_words):
             nb_correct += 1
-    
+            is_correct = True
+        output.loc[i] = {"Correct": is_correct, "Question": question, "Answer": answer}
+        output.to_csv("output.csv", index=False)
+
     print("--- RESULTS ---")
     print(f"{nb_correct}/{n} correct")
     print(f"{n - (nb_correct + len(ambiguous))}/{n} wrong")
