@@ -1,5 +1,4 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
 import pandas as pd
 from tqdm import tqdm
 import re
@@ -52,7 +51,7 @@ def load_model(model_name: str):
 
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+        torch_dtype="auto",
         device_map="auto"
     )
 
@@ -63,13 +62,10 @@ def ask(model, tokenizer, prompt: str, max_new_tokens=100):
     Generate a response from the model.
     """
     inputs = tokenizer(prompt, return_tensors="pt")
-
-    input_ids = inputs["input_ids"].to(model.device)
-    attention_mask = inputs["attention_mask"].to(model.device)
+    inputs = {k: v.to(model.device) for k, v in inputs.items()}
 
     output = model.generate(
-        input_ids=input_ids,
-        attention_mask=attention_mask,
+        **inputs,
         max_new_tokens=max_new_tokens,
         pad_token_id=tokenizer.eos_token_id,
         do_sample=False
