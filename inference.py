@@ -1,5 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
+import pandas as pd
+from tqdm import tqdm
+import re
+import sys
 
 def load_model(model_name: str):
     """
@@ -41,30 +45,44 @@ def ask(model, tokenizer, question: str, max_new_tokens=100):
     text = tokenizer.decode(output[0], skip_special_tokens=True)
     return text[len(prompt):]  # returns only the answer
 
+def contains(answer, words):
+    answer_set = set(re.findall(r"[\w']+", answer.lower()))
+    word_set = set(re.findall(r"[\w']+", words.lower()))
+    return len(answer_set.intersection(word_set)) > 0
+
 
 if __name__ == "__main__":
     model_name = "mistralai/Mistral-7B-Instruct-v0.3"
-    questions = [
-        "Jack used a spud bar to break the ice near the dock. Is Jack having a conversation or is he silent?",
-        "Lina tripped and spilled the beans across the kitchen floor. Is this statement about food or a secret?",
-        "Sora hit the nail on the head with a hammer. Is this statement about carpentry or accuracy?",
-        "To watch the parade, Ilya sat on the fence by Main Street. Is the statement about location or indecision?",
-        "Rui drew a line in the sand to mark the volleyball court. Did Rui agree or disagree to play volleyball?",
-        "The veterinarian let the cat out of the bag. Is this statement about an animal or a secret?",
-        "The acrobat hit the hay while landing after her stunt. Is the acrobat asleep or awake?",
-        "The campers added fuel to the fire when it began to die down. Are the campers in conflict or working together?",
-        "Jane dyed her hair black and blue. Is Jane hurt or unharmed?",
-        "Jane's keys were flushed down the drain Are Jane's keys wet or dry?",
-        "Jane broke Alex's heart when she took it out of the kiln. Did Alex and Jane have a platonic or romantic relationship?",
-        "The parasite gets under your skin. Is the parasite inside the person?",
-        "We found the cause of Tom's allergic reaction; it was the icing on the cake. Did Tom have a good time or bad time?",
-        "There were two races; in the long run, Andy held a steady pace. Is Andy a sportsman or a career guy?",
-    ]
-    suffix = " Answer using one word only."
-    max_answer_length = 5
+    suffix = "Answer using one word only."
+    max_answer_length = 10
+    testing = False
 
     tokenizer, model = load_model(model_name)
-    for question in questions:
-        print("\nYou:", question + suffix)
-        response = ask(model, tokenizer, question + suffix, max_answer_length)
-        print("\nModel:", response, "\n")
+    df = pd.read_csv("./dataset.csv")
+
+    if testing:
+        (context, question, correct_words, wrong_words) = df.iloc[0]
+        prompt = " ".join([context, question, suffix])
+        print(prompt)
+        print(ask(model, tokenizer, prompt, max_answer_length))
+        sys.exit()
+
+    n = df.shape[0]
+    ambiguous = []
+    nb_correct = 0
+    for _, (context, question, correct_words, wrong_words) in tqdm(df.iterrows(), total=n):
+        prompt = " ".join([context, question, suffix])
+        answer = ask(model, tokenizer, prompt, max_answer_length)
+        if contains(answer, correct_words) and contains(answer, wrong_words) or (not contains(answer, correct_words) and not contains(answer, wrong_words)):
+            ambiguous.append((prompt, answer))
+        elif contains(answer, correct_words):
+            nb_correct += 1
+    
+    print("--- RESULTS ---")
+    print(f"{nb_correct}/{n} correct")
+    print(f"{n - (nb_correct + len(ambiguous))}/{n} wrong")
+    print(f"{len(ambiguous)}/{n} ambiguous")
+
+    if len(ambiguous) > 0:
+        print("\nAmbiguous answers:")
+        print(ambiguous)
