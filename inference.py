@@ -6,7 +6,7 @@ import re
 def main():
     # ----- CHANGE THESE PARAMETERS -----
     model_name = "Qwen/Qwen3-8B"
-    suffix = "Answer using one word only. Answer: "
+    suffix = "Answer using one word only. Answer:"
     max_answer_tokens = 100     # To prevent infinite loops
     question_words = "whether"  # To detect when the model just repeats the question instead of answering
     # -----------------------------------

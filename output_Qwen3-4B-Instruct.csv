@@ -1,37 +1,15 @@
 Correct,Question,Answer
-True,Is Jack having a conversation or is he silent?,"1 word only.
-
-silent"
-True,Is this statement about food or a secret?,"1 word only.
-
-food"
-False,Is this statement about carpentry or accuracy?,"1 word only.
-
-accuracy"
-True,Is the statement about location or indecision?,"1 word only.
-
-Location"
+True,Is Jack having a conversation or is he silent?, silent
+True,Is this statement about food or a secret?, food
+False,Is this statement about carpentry or accuracy?, accuracy
+True,Is the statement about location or indecision?, location
 False,Did Rui agree or disagree to play volleyball?, disagree
-False,Is this statement about an animal or a secret?,"1 word
-
-secret"
-True,Is the acrobat asleep or awake?,"1 word only.
-
-awake"
-False,Are the campers in conflict or working together?,"1 word only.
-
-conflict"
+False,Is this statement about an animal or a secret?, secret
+True,Is the acrobat asleep or awake?, awake
+True,Are the campers in conflict or working together?, working
 True,Is Jane hurt or unharmed?, unharmed
-True,Are Jane's keys wet or dry?,1 word only. wet
-False,Did Alex and Jane have a platonic or romantic relationship?,1 word only. romantic
+True,Are Jane's keys wet or dry?, wet
+False,Did Alex and Jane have a platonic or romantic relationship?, romantic
 False,Is the parasite inside the person?, no
-True,Did Tom have a good time or bad time?,"1 word only.
-
-bad"
-False,Is Andy a sportsman or a career guy?,"1
-
-The question seems to be a riddle or a play on words. Let's break it down:
-
-- ""Two races"" and ""Andy held a steady pace"" suggests something related to running or competition.
-- ""In the long run"" could imply endurance or consistency.
-- The question asks whether"
+True,Did Tom have a good time or bad time?, bad
+True,Is Andy a sportsman or a career guy?, sportsman
