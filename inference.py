@@ -2,39 +2,42 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import pandas as pd
 from tqdm import tqdm
 import re
-import sys
 
 def main():
     # ----- CHANGE THESE PARAMETERS -----
-    model_name = "mistralai/Mistral-7B-Instruct-v0.3"
+    model_name = "Qwen/Qwen3-8B"
     suffix = "Answer using one word only. Answer: "
-    max_answer_tokens = 5
-    testing = False
+    max_answer_tokens = 100
+    question_words = "whether"  # To detect when the model just repeats the question instead of answering
     # -----------------------------------
 
     tokenizer, model = load_model(model_name)
     df = pd.read_csv("./dataset.csv")
-
-    if testing:
-        (context, question, correct_words, wrong_words) = df.iloc[0]
-        prompt = " ".join([context, question, suffix])
-        print(prompt)
-        print(ask(model, tokenizer, prompt, max_answer_tokens))
-        sys.exit()
-
     n = df.shape[0]
     ambiguous = []
     nb_correct = 0
     output = pd.DataFrame(columns=["Correct", "Question", "Answer"])
     for i, (context, question, correct_words, wrong_words) in tqdm(df.iterrows(), total=n):
         prompt = " ".join([context, question, suffix])
-        answer = ask(model, tokenizer, prompt, max_answer_tokens)
-        is_correct = False
-        if contains(answer, correct_words) and contains(answer, wrong_words) or (not contains(answer, correct_words) and not contains(answer, wrong_words)):
+        extended_prompt = prompt
+        answer = ""
+        nb_tokens = 0
+        is_correct = is_wrong = is_ambiguous = False
+        while nb_tokens < max_answer_tokens and not is_correct and not is_wrong and not is_ambiguous:
+            nb_tokens += 1
+            answer_token = ask(model, tokenizer, extended_prompt, 1)
+            answer += answer_token
+            extended_prompt += answer_token
+            if contains(answer, correct_words):
+                is_correct = True
+                nb_correct += 1
+            elif contains(answer, wrong_words):
+                is_wrong = True
+            elif contains(answer, question_words):
+                is_ambiguous = True
+
+        if is_ambiguous or (not is_correct and not is_wrong):
             ambiguous.append((prompt, answer))
-        elif contains(answer, correct_words):
-            nb_correct += 1
-            is_correct = True
         output.loc[i] = {"Correct": is_correct, "Question": question, "Answer": answer}
         output.to_csv("output.csv", index=False)
 
@@ -62,7 +65,7 @@ def load_model(model_name: str):
 
     return tokenizer, model
 
-def ask(model, tokenizer, prompt: str, max_new_tokens=100):
+def ask(model, tokenizer, prompt: str, max_new_tokens=100) -> str:
     """
     Generate a response from the model.
     """
@@ -79,7 +82,7 @@ def ask(model, tokenizer, prompt: str, max_new_tokens=100):
     text = tokenizer.decode(output[0], skip_special_tokens=True)
     return text[len(prompt):]
 
-def contains(answer, words):
+def contains(answer: str, words: str) -> bool:
     """
     Test if an answer string contains any word from another string.
     """
