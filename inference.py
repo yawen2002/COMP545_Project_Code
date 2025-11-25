@@ -7,7 +7,7 @@ def main():
     # ----- CHANGE THESE PARAMETERS -----
     model_name = "Qwen/Qwen3-8B"
     suffix = "Answer using one word only. Answer: "
-    max_answer_tokens = 100
+    max_answer_tokens = 100     # To prevent infinite loops
     question_words = "whether"  # To detect when the model just repeats the question instead of answering
     # -----------------------------------
 
@@ -17,27 +17,36 @@ def main():
     ambiguous = []
     nb_correct = 0
     output = pd.DataFrame(columns=["Correct", "Question", "Answer"])
+
+    # For each entry in the dataset
     for i, (context, question, correct_words, wrong_words) in tqdm(df.iterrows(), total=n):
         prompt = " ".join([context, question, suffix])
-        extended_prompt = prompt
+        extended_prompt = prompt    # Each generated word will be added to the extended prompt
         answer = ""
         nb_tokens = 0
         is_correct = is_wrong = is_ambiguous = False
+
+        # Stop when the answer has been identified as correct/wrong/ambiguous,
+        # or when the max number of tokens is reached
         while nb_tokens < max_answer_tokens and not is_correct and not is_wrong and not is_ambiguous:
-            nb_tokens += 1
+            # Generate one word at a time
             answer_token = ask(model, tokenizer, extended_prompt, 1)
+            nb_tokens += 1
             answer += answer_token
             extended_prompt += answer_token
-            if contains(answer, correct_words):
+
+            if contains(answer, correct_words): # The answer is correct
                 is_correct = True
                 nb_correct += 1
-            elif contains(answer, wrong_words):
+            elif contains(answer, wrong_words): # The answer is wrong
                 is_wrong = True
-            elif contains(answer, question_words):
+            elif contains(answer, question_words):  # The model just repeated the question
                 is_ambiguous = True
 
-        if is_ambiguous or (not is_correct and not is_wrong):
+        if is_ambiguous or (not is_correct and not is_wrong):   # If there is no proper answer
             ambiguous.append((prompt, answer))
+
+        # Save output to csv file
         output.loc[i] = {"Correct": is_correct, "Question": question, "Answer": answer}
         output.to_csv("output.csv", index=False)
 
