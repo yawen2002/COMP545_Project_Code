@@ -8,7 +8,7 @@ def main():
     model_name = "Qwen/Qwen3-8B"
     suffix = "Answer using one word only. Answer:"
     max_answer_tokens = 100     # To prevent infinite loops
-    question_words = "whether"  # To detect when the model just repeats the question instead of answering
+    question_words = "whether both"  # To detect when the model just repeats the question instead of answering
     # -----------------------------------
 
     tokenizer, model = load_model(model_name)
@@ -40,7 +40,7 @@ def main():
                 nb_correct += 1
             elif contains(answer, wrong_words): # The answer is wrong
                 is_wrong = True
-            elif contains(answer, question_words):  # The model just repeated the question
+            elif contains(answer, question_words) or len(answer_token) == 0:  # The model avoided answering
                 is_ambiguous = True
 
         if is_ambiguous or (not is_correct and not is_wrong):   # If there is no proper answer
