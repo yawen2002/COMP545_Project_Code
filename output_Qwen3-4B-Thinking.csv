@@ -1,0 +1,74 @@
+Correct,Question,Answer
+True,Is Jack having a conversation or is he silent?, silent
+True,Is this statement about food or a secret?, food
+False,Is this statement about carpentry or accuracy?, accuracy
+True,Is the statement about location or indecision?, location
+True,Did Rui agree or disagree to play volleyball?, agree
+True,Is this statement about an animal or a secret?, animal
+True,Is the acrobat asleep or awake?, awake
+False,Are the campers in conflict or working together?, conflict
+True,Is Jane hurt or unharmed?, unharmed
+True,Are Jane's keys wet or dry?, wet
+True,Did Alex and Jane have a platonic or romantic relationship?, platonic
+True,Is the parasite inside the person?, yes
+True,Did Tom have a good time or bad time?, bad
+True,Is Andy a sportsman or a career guy?, sportsman
+False,Is she trying to grip an object or reality?," grip
+
+Okay, the user has given me a sentence: ""She tried to come to grips with the icy railing, but her hands kept slipping."" They want me to answer whether"
+True,Is the choice about the object or the success?, object
+True,Did the tour guide drive for many hours?, no
+True,Is the course finished?, no
+True,Was Jane going through a time of hardship?, no
+True,Was Jack an owner or a handyman?, owner
+False,Is the fish hook in a highly precarious state?, precarious
+True,Was the land disputed?, no
+True,Was there some uncertainty in the form?, no
+True,Was Jack in trouble?, no
+True,Was that paragraph something that absolutely could not be considered?, no
+False,Was the rabbit constantly jumping?, no
+False,Are they talking about an animal?," bear
+
+Okay, the user mentioned that whenever they think of Canadian forests, they imagine a giant bear. They're asking if they're talking about an animal, and they want a one-word answer. 
+
+Hmm, the key here is to confirm if ""bear"" is indeed the animal they're referring to. The user specifically says ""giant bear,"" which is a bit of a playful phrase since bears aren't actually giant in the wild—they're just large. But in common language, especially in"
+True,Is the statement a summary of a very complex idea?, no
+False,Did James join a trend?," bandwagon
+
+Okay, the user has given me a question: ""James jumped on the bandwagon to take a picture with the horse. Did James join a trend? Answer using one word only. Answer: bandwagon"". 
+
+Hmm, I need to figure out what they're asking. The sentence says James jumped on the bandwagon to take a picture with the horse. The question is whether"
+True,Does an important decision need to be made?, no
+False,Is this statement about belief or about color?, belief
+False,Was the object lacking water or enthusiasm?," steam
+
+Okay, the user has a question about a handheld garment steamer that ran out of steam this morning. They're asking whether"
+False,Was Jane preparing to deal with the consequences of her actions?," consequences
+
+Okay, the user is asking about Jane and the phrase ""face the music from the opera."" They want to know if Jane was preparing to deal with the consequences of her actions, and they specifically want a one-word answer. 
+
+Hmm, I remember that ""face the music"" is an idiom. It means to confront the consequences of something, especially something negative. The ""opera"" part is a bit tricky because in this context, it's not literal—opera is just"
+True,Was Luke trying to steal Zeus's lightning or credits?, lightning
+False,Is the statement about innovation or light?, innovation
+True,Did the apple change the outcome of an important decision?, no
+True,Was Jane experiencing financial or physical strain?, physical
+True,Is the action about the mark or the standard?, mark
+False,Is Jaime dead or alive?, dead
+True,Does Joe pay the bills all day?, no
+False,Did Alice pass an exam or create a scoring system?, pass
+True,Is the statement describing an emotion or a trend?, emotion
+False,Do the two soldiers need to always be together?," together
+
+Okay, the user has given me a sentence: ""The two soldiers crossed the narrow and shaky bridge hand in hand."" Then they ask if the two soldiers need to always be together, and they want me to answer with just one word. They even provided an example answer: ""together"".
+
+Hmm, let me think about this. The sentence says they crossed the bridge ""hand in hand"", which implies they were physically connected while crossing. But the question is about whether"
+True,Is the cat fighting?, no
+True,Is the sentence describing an object’s movement or progress?, movement
+True,Does Jack want to see or acquire the Eiffel Tower?, see
+False,Is this statement about Jane saying something obvious or leaving?, obvious
+False,Is Jane giving Jack a piece of paper or trying to escape from him?, escape
+True,Are the aliens receiving a radio frequency or sharing similar opinions?," ______
+
+We are given a scenario: ""the aliens tuned in on the same wavelength and accidentally heard Earth’s morning news.""
+ The question: ""Are the aliens receiving a radio"
+True,Is the heart valued for its durability or for its kindness?, durability
