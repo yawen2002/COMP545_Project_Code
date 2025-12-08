@@ -12,7 +12,7 @@ def main():
     # -----------------------------------
 
     tokenizer, model = load_model(model_name)
-    df = pd.read_csv("./dataset.csv")
+    df = pd.read_csv("../dataset.csv")
     n = df.shape[0]
     ambiguous = []
     nb_correct = 0
