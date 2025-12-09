@@ -1,0 +1,42 @@
+Horodatage,What is your level of proficiency in English?,"""Jack used a spud bar to break the ice near the dock.""
+Is Jack having a conversation or is he silent?","""Lina tripped and spilled the beans across the kitchen floor.""
+Is this statement about food or a secret?","""Sora hit the nail on the head with a hammer.""
+Is this statement about carpentry or accuracy?","""To watch the parade, Ilya sat on the fence by Main Street.""
+Is the statement about location or indecision?","""Rui drew a line in the sand to mark the volleyball court.""
+Did Rui agree or disagree to play volleyball?","""The veterinarian let the cat out of the bag.""
+Is this statement about an animal or a secret?","""The acrobat hit the hay while landing after her stunt.""
+Is the acrobat asleep or awake?","""The campers added fuel to the fire when it began to die down.""
+Are the campers in conflict or working together?","""Jane dyed her hair black and blue.""
+Is Jane hurt or unharmed?","""Jane's keys were flushed down the drain""
+Are Jane's keys wet or dry?","""Jane broke Alex's heart when she took it out of the kiln.""
+Did Alex and Jane have a platonic or romantic relationship?","""The parasite gets under your skin.""
+Is the parasite inside the person?","""We found the cause of Tom's allergic reaction; it was the icing on the cake.""
+Did Tom have a good time or bad time?","""Jane decided to follow her mother's footsteps and become a doctor.""
+Is Jane walking or studying?","""In order to grasp the meaning of the movie, James read between the lines.""
+Was James reading or understanding?","""After realizing the project was draining more money than it could ever earn, the manager decided it was time to cut their losses and move on.""
+Did the manager use something sharp?","""The supporters of different political parties never agreed to live and let live and were always arguing.""
+Are they killing each other?","""The seasoned commando could smell a rat from miles away.""
+Was there a rat miles away?","""In their childhood, Jane was always pulling James' leg over his cartoon addiction.""
+Was Jane teasing or touching James?","""Jane took a backseat during the brainstorming session.""
+Is Jane in a car or a meeting room?","""There were two races; in the long run, Andy held a steady pace.""
+Is Andy a sportsman or a career guy?"
+2025-11-10 13:04:41,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-10 18:37:16,Fluent or almost fluent,Silent,Food,Accuracy,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,I don't know,No,Bad,Studying,Understanding,No,I don't know,No,Teasing,Meeting Room,I don't know
+2025-11-10 20:08:35,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,I don't know,Working together,Unharmed,Wet,Romantic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-10 20:24:35,Fluent or almost fluent,Having a conversation,Food,Accuracy,Location,Disagree,Animal,Awake,In conflict,Unharmed,Wet,Romantic,No,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Career guy
+2025-11-10 21:17:14,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,I don't know,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-11 15:35:59,Fluent or almost fluent,Silent,Food,Accuracy,Location,Agree,Animal,Asleep,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-11 19:32:06,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,Yes,No,Teasing,Meeting Room,Sportsman
+2025-11-11 20:22:27,Fluent or almost fluent,Silent,Food,Accuracy,Location,I don't know,Animal,Awake,Working together,Unharmed,Wet,I don't know,No,Bad,Studying,Reading,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-11 21:08:03,Fluent or almost fluent,I don't know,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,No,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Career guy
+2025-11-12 03:06:12,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Romantic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Career guy
+2025-11-14 04:18:25,Fluent or almost fluent,Silent,Food,Accuracy,Location,Agree,Animal,Asleep,Working together,Unharmed,Wet,I don't know,No,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-10 11:06:43,Native speaker,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-10 11:41:08,Native speaker,Silent,Food,Carpentry,Location,Agree,Secret,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Car,Sportsman
+2025-11-11 00:31:27,Native speaker,I don't know,Food,Carpentry,Location,I don't know,I don't know,Awake,Working together,Unharmed,Wet,Romantic,I don't know,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,I don't know
+2025-11-11 14:16:14,Native speaker,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-11 14:39:23,Native speaker,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,Platonic,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-13 13:55:00,Native speaker,Silent,Food,Accuracy,Location,Agree,Secret,Awake,Working together,Unharmed,Wet,Romantic,No,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Career guy
+2025-11-15 00:27:07,Native speaker,Having a conversation,Secret,Accuracy,Indecision,Agree,Secret,Awake,In conflict,Unharmed,I don't know,Platonic,No,Good,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman
+2025-11-18 17:26:38,Fluent or almost fluent,Silent,Food,Carpentry,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,I don't know,Yes,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,I don't know
+2025-11-18 23:21:31,Fluent or almost fluent,Silent,Food,Accuracy,Location,Agree,Animal,Awake,Working together,Unharmed,Wet,I don't know,No,Bad,Studying,Understanding,No,No,No,Teasing,Meeting Room,Sportsman

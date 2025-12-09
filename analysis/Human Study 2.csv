@@ -1,0 +1,43 @@
+Horodatage,What is your level of proficiency in English?,"""Jane decided to follow her mother's footsteps and become a doctor.""
+Is Jane walking or studying?","""In order to grasp the meaning of the movie, James read between the lines.""
+Was James reading or understanding?","""After realizing the project was draining more money than it could ever earn, the manager decided it was time to cut their losses and move on.""
+Did the manager use something sharp?","""The supporters of different political parties never agreed to live and let live and were always arguing.""
+Are they killing each other?","""The seasoned commando could smell a rat from miles away.""
+Was there a rat miles away?","""In their childhood, Jane was always pulling James' leg over his cartoon addiction.""
+Was Jane teasing or touching James?","""Jane took a backseat during the brainstorming session.""
+Is Jane in a car or a meeting room?","""She tried to come to grips with the icy railing, but her hands kept slipping.""
+Is she trying to grip an object or reality?","""In the pottery class, the students could choose to make or break the clay sculptures, depending on what they wanted to practice.""
+Is the choice about the object or the success?","""The tour guide drove the car around the clock for the tourists who wanted to see the Big Ben.""
+Did the tour guide drive for many hours?","""The geography part of the course is done and the rest is history.""
+Is the course finished?","""Jane could see the light at the end of the tunnel as she drove her new Audi through the tunnel.""
+Was Jane going through a time of hardship?","""Jack of All Trades was the name of Jack’s new antique store.""
+Was Jack an owner or a handyman?","""Jack hung the fish hook by a thread on the wall.""
+Is the fish hook in a highly precarious state?","""This strip of land is owned by Lady Jane, so it’s no man’s land.""
+Was the land disputed?","""The official form had several yes and no questions.""
+Was there some uncertainty in the form?","""Jack took his coat off the hook before going out.""
+Was Jack in trouble?","""That paragraph should be out of the question section.""
+Was that paragraph something that absolutely could not be considered?","""The rabbit stayed on the hop for the whole experiment.""
+Was the rabbit constantly jumping?","""Whenever I think of Canadian forests, I always have the image of a giant bear in mind.""
+Are they talking about an animal?","""Nature’s wonders are unmatched, as we can find the most delicious nuts perfectly wrapped in a nutshell.""
+Is the statement a summary of a very complex idea?","""James jumped on the bandwagon to take a picture with the horse.""
+Did James join a trend?","""The documentary was full of misinformation, but there was one moment of truth.""
+Does an important decision need to be made?","""The shop owner showed Maya a blanket made from yarn that was dyed in the wool before being spun.""
+Is this statement about belief or about color?","""The handheld Garment steamer ran out of steam this morning.""
+Was the object lacking water or enthusiasm?","""Jane got ready to face the music from the opera.""
+Was Jane preparing to deal with the consequences of her actions?","""The infamous Luke Castellan was known to steal Zeus’s thunder.""
+Was Luke trying to steal Zeus's lightning or credits?","""The hikers used torches to blaze a trail through the dark forest.""
+Is the statement about innovation or light?","""When she placed the apple, it tipped the balance of the plate.""
+Did the apple change the outcome of an important decision?","""Jane felt the pinch from her sister when they were arguing.""
+Was Jane experiencing financial or physical strain?","""The cat stretched its paw to reach up to scratch the wooden post.""
+Is the action about the mark or the standard?","""Jaime kicked the bucket and water spilled all over.""
+Is Jaime dead or alive?"
+2025-11-30 13:49:06,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,I don't know,No,No,No,Owner,No,No,No,No,I don't know,No,Yes,I don't know,No,No,Color,Water,No,Credits,Light,No,Physical,I don't know,Alive
+2025-11-30 15:59:25,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Reality,Object,I don't know,I don't know,I don't know,Owner,I don't know,I don't know,No,No,I don't know,I don't know,I don't know,Yes,I don't know,I don't know,I don't know,Water,I don't know,Credits,Light,I don't know,I don't know,I don't know,Alive
+2025-11-30 17:31:49,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,Object,No,No,No,Owner,No,No,No,No,No,No,Yes,No,No,No,Color,Water,No,Lightning,Light,No,Physical,Mark,Alive
+2025-11-30 17:34:33,Fluent or almost fluent,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,Object,No,No,No,Owner,Yes,I don't know,No,No,No,Yes,Yes,No,Yes,No,Color,Water,No,Credits,Light,No,Physical,I don't know,Alive
+2025-11-30 17:34:40,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,Object,Yes,Yes,Yes,Owner,No,No,I don't know,No,Yes,No,Yes,No,Yes,I don't know,Color,Enthusiasm,Yes,Credits,Innovation,No,Physical,I don't know,Alive
+2025-11-30 17:35:55,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,Object,Yes,No,No,Owner,No,No,No,No,Yes,Yes,No,No,Yes,No,Color,Water,No,Credits,Innovation,No,Physical,Mark,Alive
+2025-11-30 17:45:22,Fluent or almost fluent,Studying,Understanding,No,I don't know,No,Teasing,Meeting Room,Object,Object,No,No,No,Owner,Yes,No,No,No,No,No,Yes,No,I don't know,No,Color,Water,I don't know,I don't know,Light,No,I don't know,Mark,Alive
+2025-11-30 19:05:15,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Object,Object,Yes,No,No,Owner,No,No,No,No,No,No,Yes,No,No,No,Color,Water,No,Lightning,Light,No,Physical,I don't know,Alive
+2025-11-30 19:36:14,Native speaker,Studying,Understanding,No,No,Yes,Teasing,Meeting Room,Object,I don't know,No,No,No,Owner,No,No,No,No,Yes,No,Yes,No,Yes,No,Color,Water,No,Credits,Light,No,Physical,Mark,Alive
+2025-12-01 00:08:52,Native speaker,Studying,Understanding,No,No,No,Teasing,Meeting Room,Reality,Object,Yes,No,No,Owner,No,No,No,No,No,Yes,No,Yes,Yes,No,Color,Water,No,Lightning,Light,No,I don't know,Mark,Alive

@@ -48,3 +48,7 @@ The results for each model are saved in csv files.
 The script `Output_Text_Approach.py` allows models to freely generate text and classifies their responses by matching predefined answer keywords in the output.
 
 The results are saved in csv files.
+
+## Analysis of Results
+
+The notebook `Human_Study_Analysis.ipynb` compares LLM performance and human performance from the human study.

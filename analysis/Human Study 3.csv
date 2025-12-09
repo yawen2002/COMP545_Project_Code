@@ -1,0 +1,27 @@
+Horodatage,What is your level of proficiency in English?,"""Joe designed his shoes to look like dollar bills, so he can foot the bill all day.""
+Does Joe pay the bills all day?","""Before Alice made the grade standard at the school, every teacher used a different notation.""
+Did Alice pass an exam or create a scoring system?","""King Julian directed all the rage towards poor Mort.""
+Is the statement describing an emotion or a trend?","""The two soldiers crossed the narrow and shaky bridge hand in hand.""
+Do the two soldiers need to always be together?","""These cheap cat trees are rough and tumble easily.""
+Is the cat fighting?","""The model rocket got off the ground and rose into the sky.""
+Is the sentence describing an object’s movement or progress?","""Jack booked a room with a view of the Eiffel Tower for their vacation.""
+Does Jack want to see or acquire the Eiffel Tower?","""Jane decided to go without saying anything to Jack.""
+Is this statement about Jane saying something obvious or leaving?","""Jane gave Jack the slip containing her goodbye.""
+Is Jane giving Jack a piece of paper or trying to escape from him?","""The aliens tuned in on the same wavelength and accidentally heard Earth’s morning news.""
+Are the aliens receiving a radio frequency or sharing similar opinions?","""The android was built with a heart of gold because of the metal’s strong physical properties.""
+Is the heart valued for its durability or for its kindness?","""She tried to steer clear of the crowded hallway between classes.""
+Is she keeping her distance from the hallway, or navigating through it?","""New interns are expected to toe the line during their first few weeks.""
+Are new interns expected to stand in a neat line or obey the management?","""All things being equal, the team with more experience should win the match.""
+Is it talking about a fair scenario or identical teams?","""The cut and thrust of the debate kept the audience on the edge of their seats.""
+Is the sentence describing a lively argument, or an sword fight?"
+2025-12-04 20:49:18,Native speaker,No,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-04 21:20:55,Fluent or almost fluent,No,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-05 10:57:44,Native speaker,No,Pass an exam,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Navigating,Obey management,Fair scenario,Argument
+2025-12-05 12:52:47,Native speaker,No,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Kindness,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-05 19:55:17,Fluent or almost fluent,No,Create a scoring system,Emotion,No,No,Progress,See,Leaving,Trying to escape,Receiving radio frequency,Kindness,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-05 20:33:25,Native speaker,No,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Trying to escape,Receiving radio frequency,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-05 20:33:33,Intermediate,No,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-06 01:34:49,Fluent or almost fluent,I don't know,Create a scoring system,Emotion,No,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-06 19:43:40,Fluent or almost fluent,I don't know,Create a scoring system,Trend,No,I don't know,Progress,See,Leaving,Trying to escape,I don't know,Durability,Keeping her distance,Obey management,Fair scenario,Argument
+2025-12-06 19:44:17,Fluent or almost fluent,I don't know,Create a scoring system,Emotion,Yes,No,Progress,See,Saying something obvious,Giving a piece of paper,Receiving radio frequency,Kindness,Navigating,Obey management,I don't know,Sword fight
+2025-12-06 20:08:11,Native speaker,No,Create a scoring system,Emotion,Yes,No,Movement,See,Leaving,Giving a piece of paper,Receiving radio frequency,Durability,Keeping her distance,Stand in a neat line,Fair scenario,Argument
