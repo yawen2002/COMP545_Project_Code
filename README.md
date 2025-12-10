@@ -52,3 +52,8 @@ The results are saved in csv files.
 ## Analysis of Results
 
 The notebook `Human_Study_Analysis.ipynb` compares LLM performance and human performance from the human study.
+
+The three surveys used for our human study can be found here:
+- [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLSciv4ADmhH80rD9wEhQbjiyFOYEX_FoPhY7QEres4qN6sArWg/viewform?usp=dialog)
+- [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLSdeHRwGY1vnJPvINxAa0rQQFZh46v_sttJnkjO1CfL7DZnhFw/viewform?usp=dialog)
+- [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSd6blMBsdbj4cCpFSGJKBLu9fnrU9F-OVkS8icbyjf-gKNBoA/viewform?usp=dialog)
