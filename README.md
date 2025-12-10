@@ -49,7 +49,7 @@ The script `Output_Text_Approach.py` allows models to freely generate text and c
 
 The results are saved in csv files.
 
-## Analysis of Results
+## 3. Analysis of Results
 
 The notebook `Human_Study_Analysis.ipynb` compares LLM performance and human performance from the human study.
 
